@@ -1,0 +1,23 @@
+{
+  "packages": [
+    "openjdk@17",
+    "maven@3.9.6",
+    "python3",
+    "poetry"
+  ],
+  "shell": {
+    "init_hook": [
+        "poetry install",
+        "echo 'Devbox ready for test-9!'"
+    ],
+    "scripts": {
+      "start": "mvn spring-boot:run",
+      "lint": "mvn checkstyle:check",
+      "coverage": "mvn jacoco:report",
+      "build": "mvn clean install",
+      "test": "mvn test",
+      "docs-serve": "poetry run mkdocs serve",
+      "docs-build": "poetry run mkdocs build"
+    }
+  }
+}
