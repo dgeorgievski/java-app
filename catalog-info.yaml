@@ -9,7 +9,7 @@ metadata:
     - maven
   annotations:
     github.com/project-slug: dgeorgievski/java-app
-    # backstage.io/source-location: url:https://github.com/dgeorgievski/java-app
+    backstage.io/source-location: url:https://github.com/dgeorgievski/java-app
     backstage.io/techdocs-ref: dir:.
     devbox.io/enabled: "true"
 spec:
